@@ -24,5 +24,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dennycd/algorithmbox/issues"
+  },
+  "dependencies" : {
+	  "xml2js" : ">=0.2.8",
+	  "sylvester" : ">=0.0.21",
+	  "d3" : ">=3.2.1"
   }
 }

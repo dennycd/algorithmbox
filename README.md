@@ -1,6 +1,6 @@
 ## AlgorithmBox
+AlgorithmBox is a metaheuristic algorithm development framework for solving discrete optimization problems. 
 
-A metaheuristic algorithm development framework for solving discrete optimization problems.
 
 
 

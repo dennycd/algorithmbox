@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="Name">
+		<xs:annotation>
+			<xs:documentation>Name of the instance.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Source">
+		<xs:annotation>
+			<xs:documentation>Source of the instance.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Description">
+		<xs:annotation>
+			<xs:documentation>Description of the instance.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="DoublePrecision">
+		<xs:annotation>
+			<xs:documentation>Number of represented digits in double types.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:nonNegativeInteger">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="IgnoredDigits">
+		<xs:annotation>
+			<xs:documentation>Number of ignored digits of double types. (The deviation of double values can be at most 1e-(DoublePrecision - IgnoredDigits).)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:nonNegativeInteger">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="Edge">
+		<xs:annotation>
+			<xs:documentation>One edge to a vertex.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:nonNegativeInteger">
+				<xs:attribute name="cost" type="xs:double" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="Vertex">
+		<xs:annotation>
+			<xs:documentation>One vertex.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="edge" type="Edge" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Graph">
+		<xs:annotation>
+			<xs:documentation>Adjacency matrix of the instance. The elements in the matrix are the costs.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="vertex" type="Vertex" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="TravellingSalesmanProblemInstance">
+		<xs:annotation>
+			<xs:documentation>One instance of the orienteering problem.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="Name" />
+			<xs:element name="source" type="Source" />
+			<xs:element name="description" type="Description" />
+			<xs:element name="doublePrecision" type="DoublePrecision" />
+			<xs:element name="ignoredDigits" type="IgnoredDigits" />
+			<xs:element name="graph" type="Graph" />
+		</xs:sequence>
+	</xs:complexType>
+
+  <xs:element name="travellingSalesmanProblemInstance" type="TravellingSalesmanProblemInstance" />
+</xs:schema>
