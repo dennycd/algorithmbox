@@ -1,0 +1,28 @@
+{
+  "name": "algorithmbox",
+  "version": "1.0.0",
+  "description": "A  metaheuristic algorithm development framework for solving discrete optimization problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennycd/algorithmbox.git"
+  },
+  "keywords": [
+    "algorithm",
+    "metaheurstic",
+    "optimization",
+    "local",
+    "search",
+    "stochastic",
+    "combinatorial",
+    "discrete"
+  ],
+  "author": "Denny C. Dai <dennycd@me.com> (http://dennycd.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dennycd/algorithmbox/issues"
+  }
+}
