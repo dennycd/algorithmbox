@@ -139,7 +139,7 @@ nodeunit test_visualization.js
 ```
 and you would obtain the runtime quality distribution
 
-![RuntimeQualityDistribution](https://github.com/dennycd/algorithmbox/blob/master/doc/visualiation.png "RuntimeQualityDistribution")
+![RuntimeQualityDistribution](https://raw.github.com/dennycd/algorithmbox/master/doc/visualiation.png?login=dennycd&token=ccf57780a2a5133ea9da8930d036a61b "RuntimeQualityDistribution")
 
 ## Roadmap
 
