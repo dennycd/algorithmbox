@@ -5,7 +5,7 @@ npm install algorithmbox
 ```
 
 ## How to Use
-With algorithmbox, you can write a few lines of javascript code to implemente a local search algorithm and run it against problems such as [TSP](https://en.wikipedia.org/wiki/Travelling_salesman_problem) and [SAT](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem). AlgorithmBox defined a number of basic stochastic local search algorithms including 
+With algorithmbox, you can write a few lines of javascript code to implement a local search algorithm and run it against problems such as [TSP](https://en.wikipedia.org/wiki/Travelling_salesman_problem) and [SAT](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem). AlgorithmBox defined a number of basic stochastic local search algorithms including 
 
 * Simulated Annealing <https://en.wikipedia.org/wiki/Simulated_annealing>
 * Tabu Search  <https://en.wikipedia.org/wiki/Tabu_search>
