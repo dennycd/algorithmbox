@@ -73,16 +73,12 @@ AlgorithmBox provides a simple framework for experimenting with different proble
 var Experiment = require('algorithmbox').Experiment;
 
 var config = {
-
 	//test against TSP problem class
 	"tsp": { 
-	
 		//run each algorithm against each TSP instance loaded from a file
 		"instances" : ["bayg29.xml", "br17.xml"],   
 		
-		
 		"algorithms": {
-		
 			//setting for a user-defined Simulated Annealing algorithm 
 			"tsp_sa": [ 
 				{
@@ -95,16 +91,14 @@ var config = {
 					"boltzmanconst": 0.001,
 					"coolingscheme": "geometric"
 				}, 
-				
 			]
-
 			//settings for a user-defined hill climbing algorithm
 			"tsp_iia": []
 		},
 		
 		//total number of independent runs (with random restart)
 		"runs": 100,
-		
+
 		//terminate condition for each run
 		"max_ls_steps" : 5000
 	}
@@ -124,11 +118,8 @@ var Analyzer = require('algorithm').Analyzer;
 
 //load runtime quality distribution result for a specific algorithm runed against a specific problem instance
 var rqds = analyzer.get_runtime_quality("sat", "uf20-01.cnf", "gsat_iia", {"terminate_ls_steps" : 30});
-
 var rqds2 = analyzer.get_runtime_quality("sat", "uf20-01.cnf", "gsat_iia", {"terminate_ls_steps" : 10});
-
 var rsd = analyzer.get_runtime_solvability('sat', "uf20-01.cnf", "gsat_iia", {}, 85);
-
 rsd = analyzer.get_runtime_solvability('tsp', "bayg29.xml", "tsp_iia", {}, 1800);
 	
 ```
@@ -140,6 +131,16 @@ AlgorithmBox provides the following experimental analysis matrix
 * **Problem Solution Quality** shows the average solution of the algorithm across mutlitple problem instances over a number of indepedent runs 
 
 For further details, please look into the test case examples. 
+
+#Visualization and Ploting 
+A sample visualization is provided (test/test_visualization.js) that demonstrate how to use [Socket.IO](http://socket.io/) and [D3](http://d3js.org/) to visualize the runtime quality distribution of a typical experiment. In the test folder, do 
+```javascript 
+nodeunit test_visualization.js
+```
+and you would obtain a graph like this 
+
+
+
 
 
 
