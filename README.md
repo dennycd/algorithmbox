@@ -66,7 +66,7 @@ algs.run(function(step){
 ```
  
 
-## Experiemnt and Analysis 
+## Experiment and Analysis 
 AlgorithmBox provides a simple framework for experimenting with different problem instances and algorithm parameter configurations . To define an experiment 
 
 ```javascript 
