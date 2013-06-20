@@ -28,6 +28,14 @@
   "dependencies" : {
 	  "xml2js" : ">=0.2.8",
 	  "sylvester" : ">=0.0.21",
-	  "d3" : ">=3.2.1"
+	  "d3" : ">=3.2.1",
+	  "node-uuid" : ">=1.4.0",
+	  "simple-cls" : ">=0.0.5",
+	  "express" : ">=3.2.6",
+	  "socket.io" : ">=0.9.16",
+	  "nodeunit" : ">=0.8.0"
+  },
+  "engines" : {
+	  "node" : ">=0.10.0"
   }
 }

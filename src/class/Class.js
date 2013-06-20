@@ -1,7 +1,7 @@
 var util = require('util');
 var assert = require('assert');
 var TYPE = require('./Type.js');
-var Method = require('.//Method.js');
+var Method = require('./Method.js');
 
 /**
  Constructor for Class class instance 

@@ -1,12 +1,12 @@
 var util = require('util');
 var assert = require('assert');
-var defineClass = require('class/defineClass.js');
-var Class = require('class/Class.js');
-var sprintf = require("util/sprintf.js").sprintf;
+var defineClass = require('../../class/defineClass.js');
+var Class = require('../../class/Class.js');
+var sprintf = require("../../util/sprintf.js").sprintf;
 
 var Matrix = require('sylvester').Matrix;
 var Vector = require('sylvester').Vector;
-var OSolution = require('core/OSolution.js');
+var OSolution = require('../../core/OSolution.js');
 
 
 /**

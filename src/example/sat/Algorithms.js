@@ -1,15 +1,15 @@
 var util = require('util');
 var assert = require('assert');
-var defineClass = require('class/defineClass.js');
-var Class = require('class/Class.js');
+var defineClass = require('../../class/defineClass.js');
+var Class = require('../../class/Class.js');
 var Matrix = require('sylvester').Matrix;
 var Vector = require('sylvester').Vector;
 var SATSolution = require('./Solution.js');
 
 
-var IIA = require('core/IIA.js');
-var SA = require('core/SA.js');
-var TS = require('core/TS.js');
+var IIA = require('../../core/IIA.js');
+var SA = require('../../core/SA.js');
+var TS = require('../../core/TS.js');
 
 
 /**

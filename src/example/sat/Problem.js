@@ -1,13 +1,13 @@
 var util = require('util');
 var assert = require('assert');
-var defineClass = require('class/defineClass.js');
-var Class = require('class/Class.js');
+var defineClass = require('../../class/defineClass.js');
+var Class = require('../../class/Class.js');
 var Matrix = require('sylvester').Matrix;
 var Vector = require('sylvester').Vector;
-var fisher_yates_permute = require('util/permute.js');
+var fisher_yates_permute = require('../../util/permute.js');
 
 
-var OProblem = require('core/OProblem.js');
+var OProblem = require('../../core/OProblem.js');
 var SATSolution = require('./Solution.js');
 
 

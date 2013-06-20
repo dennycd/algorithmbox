@@ -21,10 +21,11 @@ To implement a hill climbing algorithm for solving TSP, do the following
 ```javascript 
 //base algorithm definition of hill climbing
 var IIA = require('algorithmbox').IIA;
+var defineClass = require('algorithmbox').defineClass;
 
 //extend the framework-provided IIA definition
-var TSP_IIA = defineClass({
-	name : "TSP_IIA",
+var MyIIA = defineClass({
+	name : "MyIIA",
 	extend : IIA, 
 	methods : {
 		
@@ -53,7 +54,7 @@ Now run the algorithm against the problem instance
 ```javascript
 
 //create a IIA algorithm with predefined terminate condition
-var algs = new TSP_IIA(instance, {
+var algs = new MyIIA(instance, {
 	'terminate_ls_steps' : 1000  //stop if maximum search steps reached
 });
 
@@ -137,12 +138,18 @@ A sample visualization is provided (test/test_visualization.js) that demonstrate
 ```javascript 
 nodeunit test_visualization.js
 ```
+
+In the browser, open 
+```bash
+localhost:8888
+```
+
 and you would obtain the runtime quality distribution showing how solution quality (Y Axis for minimization problem) improves over runtime (X axis as local search steps)
 
 ![RuntimeQualityDistribution](https://raw.github.com/dennycd/algorithmbox/master/doc/visualiation.png?login=dennycd&token=ccf57780a2a5133ea9da8930d036a61b "RuntimeQualityDistribution")
 
 ## Roadmap
-
+AlgorithmBox is still a new concept under developement. Contributors are welcomed. 
 
 ## Author 
 Denny C. Dai (<dennycd@me.com> <http://dennycd.me>)
