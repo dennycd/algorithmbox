@@ -137,12 +137,11 @@ A sample visualization is provided (test/test_visualization.js) that demonstrate
 ```javascript 
 nodeunit test_visualization.js
 ```
-and you would obtain a graph like this 
+and you would obtain the runtime quality distribution
 
+![RuntimeQualityDistribution](https://github.com/dennycd/algorithmbox/blob/master/doc/visualiation.png "RuntimeQualityDistribution")
 
-
-
-
+## Roadmap
 
 
 ## Author 
