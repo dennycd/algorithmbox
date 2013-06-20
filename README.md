@@ -137,7 +137,7 @@ A sample visualization is provided (test/test_visualization.js) that demonstrate
 ```javascript 
 nodeunit test_visualization.js
 ```
-and you would obtain the runtime quality distribution
+and you would obtain the runtime quality distribution showing how solution quality (Y Axis for minimization problem) improves over runtime (X axis as local search steps)
 
 ![RuntimeQualityDistribution](https://raw.github.com/dennycd/algorithmbox/master/doc/visualiation.png?login=dennycd&token=ccf57780a2a5133ea9da8930d036a61b "RuntimeQualityDistribution")
 
