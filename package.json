@@ -1,6 +1,6 @@
 {
   "name": "algorithmbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A  metaheuristic algorithm development framework for solving discrete optimization problem",
   "main": "index.js",
   "scripts": {
