@@ -1,6 +1,6 @@
 //base algorithm definition of hill climbing
 var IIA = require('algorithmbox').IIA;
-var defineClass = require('algorithmbox').defineClass;
+var defineClass = require('simple-cls').defineClass;
 
 //extend the framework-provided IIA definition
 var MyIIA = defineClass({
