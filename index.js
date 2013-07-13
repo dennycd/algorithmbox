@@ -14,7 +14,6 @@ module.exports.TS = require('./src/core/TS.js');
 module.exports.Experiment = require('./src/core/Experiment.js').Experiment;
 module.exports.Analyzer = require('./src/core/Experiment.js').Analyzer;
 
-
 module.exports.Example = {};
 
 //example SAT Problem
@@ -29,7 +28,3 @@ module.exports.Example.TSP_Solution = require('./src/example/tsp/Solution.js');
 module.exports.Example.IIA = require('./src/example/tsp/Algorithms.js').TSP_IIA;
 module.exports.Example.SA = require('./src/example/tsp/Algorithms.js').TSP_SA;
 module.exports.Example.TS = require('./src/example/tsp/Algorithms.js').TSP_TS;
-
-
-//class system
-module.exports.defineClass = require('./src/class/defineClass.js');
