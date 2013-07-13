@@ -1,8 +1,6 @@
 var util = require('util');
 var assert = require('assert');
-var defineClass = require('../class/defineClass.js');
-var Class = require('../class/Class.js');
-
+var defineClass = require('simple-cls').defineClass;
 var uuid = require('node-uuid').v4;
 
 var OProblem = require('./OProblem.js');
